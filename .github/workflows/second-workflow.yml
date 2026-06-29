@@ -1,0 +1,19 @@
+name: My second Workflow
+
+on:
+  push:
+
+jobs:
+  hello-job:
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Print Hello
+        run: echo "Hello GitHub"
+
+      - name: Print Date
+        run: date
+
+      - name: Print Current Directory
+        run: pwd
